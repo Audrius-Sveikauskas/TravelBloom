@@ -28,25 +28,39 @@ const getCountriesByKeyword = (countries, keyword) => {
 };
 
 const getTemplesByKeyword = (temples, keyword) => {
-  temples.forEach((temple) => {
-    if (
-      temple.name.toLowerCase().includes(keyword.toLowerCase()) ||
-      temple.description.toLowerCase().includes(keyword.toLowerCase())
-    ) {
+  if (keyword.toLowerCase() === 'temple' || keyword.toLowerCase() === 'temples') {
+    temples.forEach((temple) => {
       getResultCard(temple.imageUrl, temple.name, temple.description);
-    }
-  });
+    })
+  } else {
+    temples.forEach((temple) => {
+      if (
+          temple.name.toLowerCase().includes(keyword.toLowerCase()) ||
+          temple.description.toLowerCase().includes(keyword.toLowerCase())
+      ) {
+        getResultCard(temple.imageUrl, temple.name, temple.description);
+      }
+    });
+  }
+
 };
 
 const getBeachesByKeyword = (beaches, keyword) => {
-  beaches.forEach((beach) => {
-    if (
-      beach.name.toLowerCase().includes(keyword.toLowerCase()) ||
-      beach.description.toLowerCase().includes(keyword.toLowerCase())
-    ) {
-      getResultCard(beach.imageUrl, beach.name, beach.description);
-    }
-  });
+  if (keyword.toLowerCase() === 'beach' || keyword.toLowerCase() === 'beaches') {
+    beaches.forEach((beach) => {
+        getResultCard(beach.imageUrl, beach.name, beach.description);
+    });
+  } else {
+    beaches.forEach((beach) => {
+      if (
+          beach.name.toLowerCase().includes(keyword.toLowerCase()) ||
+          beach.description.toLowerCase().includes(keyword.toLowerCase())
+      ) {
+        getResultCard(beach.imageUrl, beach.name, beach.description);
+      }
+    });
+  }
+
 };
 
 const handleSearchClick = () => {
