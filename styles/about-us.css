@@ -1,0 +1,41 @@
+.text-container {
+    padding: 1rem;
+    background: rgba(26, 77, 46, .5);
+    border-radius: 1rem;
+}
+
+.team {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    gap: 4rem;
+}
+
+.team-desc-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex: 1;
+}
+
+.avatar {
+    width: 6.4rem;
+    height: 6.4rem;
+}
+
+.job {
+    width: 100%;
+    background-color: #1A4D2E;
+    border: 2px solid #4F6F52;
+    border-radius: 1rem;
+    padding: 1rem;
+    text-align: center;
+    color: #F5EFE6;
+}
+
+.job-desc {
+    font-size: 1.4rem;
+    font-weight: 200;
+    color: #F5EFE6;
+}

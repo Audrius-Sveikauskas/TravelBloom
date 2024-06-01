@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    color: #1A4D2E;
+}
+
+body {
+    font-family: "Ubuntu Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.6rem;
+    position: relative;
+}
+
+h1 {
+    font-size: 10rem;
+    text-transform: uppercase;
+    color: #F5EFE6;
+}
+
+h3 {
+    font-size: 8rem;
+    color: #F5EFE6;
+}
+
+h6 {
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 0.2rem;
+    line-height: 3rem;
+    text-wrap: wrap;
+    color: #F5EFE6;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(90deg, rgba(26, 77, 46, 1) 0%, rgba(26, 77, 46, 0) 100%),
+    url("images/city-home.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+
+.button {
+    color: #F5EFE6;
+    background-color: #1A4D2E;
+    border: 1px solid #1A4D2E;
+    border-radius: 6px;
+    padding: 1rem 2rem;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.button-green {
+    background-color: #4F6F52;
+
+    &:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.19);
+    }
+}
+
+.button-dark-green {
+    background-color: #1A4D2E;
+}
+
+.content-container {
+    height: 100vh;
+    padding-top: 8rem;
+    padding-left: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 10rem;
+}
+
+.content-social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12rem;
+}
+
+.content-social-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.content-vertical-line {
+    border-left: 0.2rem solid #F5EFE6;
+    border-radius: 50%;
+    height: 25vh;
+}
+
+.content-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 6rem;
+}
+
+.social-logo {
+    height: 3rem;
+    cursor: pointer;
+}
+
+.dots {
+    width: 23rem;
+    height: 23rem;
+    position: absolute;
+    top: 14rem;
+    left: 70rem;
+    background-image: url(images/dot.svg);
+}
